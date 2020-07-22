@@ -1,12 +1,11 @@
 package com.mye.service;
 
-import org.springframework.stereotype.Service;
+/**
+ * @author lixiang
+ * @date 2020/7/22 14:07
+ */
+public interface HelloService {
+    String Say();
 
-@Service
-public class HelloService {
-
-    public String Say(){
-        return "hello world!  呵呵";
-    }
-
+    String result();
 }
