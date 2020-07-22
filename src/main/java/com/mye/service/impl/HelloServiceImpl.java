@@ -22,7 +22,7 @@ public class HelloServiceImpl implements HelloService {
         Set<String> keys = redisClient.keys("*");
         StringBuilder stringBuilder = new StringBuilder();
         for (String key : keys) {
-            stringBuilder.append(key).append(":").append(redisClient.get(key)).append("\n");
+            stringBuilder.append("<br>").append(key).append(":").append(redisClient.get(key)).append("</br>");
         }
         return stringBuilder.toString();
     }
