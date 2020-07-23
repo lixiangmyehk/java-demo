@@ -1,5 +1,9 @@
 package com.mye.service;
 
+import com.mye.model.Record;
+
+import java.util.List;
+
 /**
  * @author lixiang
  * @date 2020/7/22 14:07
@@ -7,5 +11,5 @@ package com.mye.service;
 public interface HelloService {
     String Say();
 
-    String result();
+    List<Record> result();
 }
