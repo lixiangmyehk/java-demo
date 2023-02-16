@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools{
-        maven 'maven_3.8.4'
+        maven 'maven_3.2.0'
     }
     stages {
         stage('拉取代码') {
