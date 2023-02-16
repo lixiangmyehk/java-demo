@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('拉取代码') {
             steps {
-                git credentialsId: '93f024b8-6456-4c98-a131-9a5ee9f42027', url: 'https://gitee.com/i-dont-recognize-you/school-page.git'
+                git pull -b master https://gitee.com/i-dont-recognize-you/school-page.git
                 echo '拉取成功'
             }
         }
